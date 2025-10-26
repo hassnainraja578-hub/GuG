@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuGu Hearts</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: #ff1493;
+      overflow: hidden;
+    }
+    h1 {
+      margin-top: 50px;
+      font-size: 2.5em;
+    }
+    .heart {
+      position: absolute;
+      animation: float 5s infinite;
+      font-size: 2em;
+    }
+    @keyframes float {
+      0% { top: 100%; left: 50%; opacity: 1; }
+      100% { top: -10%; left: calc(50% + 100px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>❤️ GuGu ❤️</h1>
+  <script>
+    for (let i = 0; i < 30; i++) {
+      let heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.top = Math.random() * 100 + 'vh';
+      heart.innerText = '❤️';
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
