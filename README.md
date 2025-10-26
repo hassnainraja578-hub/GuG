@@ -28,6 +28,20 @@
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
+    .btn {
+      background-color: #fff;
+      color: #ff69b4;
+      border: none;
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+    }
     audio {
       display: none;
     }
@@ -40,6 +54,10 @@
   <p>May Allah bless you with endless joy, health, and success.</p>
   <p>You are the most precious part of my life, and I thank Allah for you every day.</p>
   <p style="font-size: 1.5em; font-weight: bold;">"جنم دن مبارک جان دیا ٹوٹیا"</p>
+
+  <button class="btn" onclick="location.href='hearts.html'">💗 Click for Hearts</button>
+  <button class="btn" onclick="location.href='stars.html'">🌟 Click for Stars</button>
+  <button class="btn" onclick="location.href='quotes.html'">💬 Love Quotes</button>
 
   <audio autoplay loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
